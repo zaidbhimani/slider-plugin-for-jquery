@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
+    <style>
+    .slide {
+        position: relative;
+        background: red;
+        color: white;
+        border: 1px solid #ddd;
+        text-align: center;
+        min-height: 40px;
+    }
+
+    .slick-track {
+        height: 40px;
+    }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</head>
+
+<body>
+    <section class="top_slider">
+        <div class="slide">
+            <h2>text 1</h2>
+        </div>
+        <div class="slide">
+            <h2>text 2</h2>
+        </div>
+        <div class="slide">
+            <h2>text 3</h2>
+        </div>
+        <div class="slide">
+            <h2>text 4</h2>
+        </div>
+        <div class="slide">
+            <h2>text 5</h2>
+        </div>
+        <div class="slide">
+            <h2>text 6</h2>
+        </div>
+    </section>
+    <section class="product">
+        <div>
+            <img src="http://placehold.it/350x100?text=1">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=2">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=3">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=4">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=5">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=6">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=7">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=8">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=9">
+        </div>
+        <div>
+            <img src="http://placehold.it/350x100?text=10">
+        </div>
+    </section>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.top_slider').slick({
+            slidesToShow: 3,
+            infinite: true,
+            slidesToScroll: 1,
+            speed: 500,
+            centerMode: true,
+        });
+
+        $('.product').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+    });
+    </script>
+</body>
+
+</html>
