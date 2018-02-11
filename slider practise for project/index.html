@@ -45,18 +45,10 @@
         </div>
     </section>
     <section class="product">
-        <div>
-            <img src="http://placehold.it/350x100?text=1">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x100?text=2">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x100?text=3">
-        </div>
-        <div>
-            <img src="http://placehold.it/350x100?text=4">
-        </div>
+      
+        
+        
+        
         <div>
             <img src="http://placehold.it/350x100?text=5">
         </div>
@@ -84,12 +76,14 @@
             slidesToScroll: 1,
             speed: 500,
             centerMode: true,
+            asNavFor: '.product'
         });
 
         $('.product').slick({
             centerMode: true,
             centerPadding: '60px',
             slidesToShow: 3,
+            asNavFor: '.top_slider',
             responsive: [{
                     breakpoint: 768,
                     settings: {
